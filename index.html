@@ -11,6 +11,71 @@
 <body>
     
 
+    <section class="bmi-section">
+        <h1>BMI Calculator</h1>
+        <p class="subtext">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        
+        <div class="bmi-container">
+            <div class="bmi-chart">
+                <h2>BMI Calculator Chart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="bmi-calculator">
+                <h2>Calculate your BMI</h2>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <form>
+                    <div class="input-group">
+                        <input type="number" placeholder="Height/cm">
+                        <input type="number" placeholder="Weight/kg">
+                    </div>
+                    <div class="input-group">
+                        <input class="input" type="number" placeholder="Age">
+                        <select class="input">
+                            <option value="" disabled selected>Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <select>
+                            <option value="" disabled selected>Select an activity factor</option>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="light">Light Activity</option>
+                            <option value="moderate">Moderate Activity</option>
+                            <option value="active">Active</option>
+                        </select>
+                    </div>
+                    <button class="button" type="submit">Calculate</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <section class="team-section">
         <h1>Meet Our Team</h1>
         <p class="subtext">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>

@@ -6,6 +6,122 @@
     margin: 0;
 }
 
+button{
+    background-color: #d64424;
+    border-radius: 42px;
+    font-size: 15px;
+    border: none;
+    position: static;
+    width: 224px;
+    height: 54px;
+
+}
+
+.bmi-section {
+    background-color: #000000;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.bmi-section h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: ;
+    margin-bottom: 10px;
+}
+
+.bmi-section .subtext {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #bbb;
+}
+
+.bmi-container {
+    background-color: #333;
+    padding-top: 20px;
+    padding-left: 190px;
+    padding-right: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.bmi-chart, .bmi-calculator {
+    
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 48%;
+}
+
+.bmi-chart h2, .bmi-calculator h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bmi-chart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bmi-chart th, .bmi-chart td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444;
+    color: #bbb;
+}
+
+.bmi-chart th {
+    background-color: #222;
+    color: #fff;
+}
+
+.bmi-calculator form {
+    text-align: left;
+}
+.input{
+    max-width: 336px;
+    max-height: 48px;
+}
+
+.bmi-calculator .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.bmi-calculator p{
+    color: #bbb;
+}
+
+.bmi-calculator input, .bmi-calculator select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+/* .bmi-calculator button {
+
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f25430;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+} */
+
+.bmi-calculator button:hover {
+    background-color: #d64424;
+}
+
 .team-section {
     text-align: center;
     padding-left: 190px;
@@ -144,6 +260,16 @@
 
 /* Mobile view adjustments */
 @media (max-width: 576px) {
+    .bmi-section{
+        padding: 20px auto;
+    }
+    .bmi-container{
+        
+        flex-direction: column;
+    }
+    .bmi-calculator{
+        
+    }
     .team-section{
         padding-left: 20px;
         padding-right: 20px;
