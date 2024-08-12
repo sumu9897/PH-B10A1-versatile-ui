@@ -2,8 +2,93 @@
 
 
 *{
-    padding: 0;
+    padding: 20px auto;
     margin: 0;
+}
+
+.team-section {
+    text-align: center;
+    padding-left: 190px;
+    padding-right: 190px;
+    background-color: #000000;
+    padding-bottom: 80px;
+}
+
+.team-section h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+}
+
+.team-section .subtext {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    margin-bottom: 40px;
+
+}
+
+.team-grid {
+    max-width: 1060px;
+    min-height: 604px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap:20px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1rem;
+
+}
+
+.team-member {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 326.67px;
+    height: 272px;
+    text-align: left;
+    background-size: cover;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.img1{
+    background-image: url('./images/jerome.png');
+
+}
+.img2{
+    background-image: url('./images/cameron.png');
+}
+.img3{
+    background-image: url('./images/darrell.png');
+}
+.img4{
+    background-image: url('./images/dianne.png');
+}
+.img5{
+    background-image: url('./images/cody.png');
+}
+.img6{
+    background-image: url('./images/theresa.png');
+}
+.member-info {
+    padding: 15px;
+    padding-top: 200px;
+}
+
+.member-info h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    font-size: 0.9rem;
+    color: #ddcaca;
 }
 
 .footer {
@@ -59,6 +144,25 @@
 
 /* Mobile view adjustments */
 @media (max-width: 576px) {
+    .team-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .team-member.img5,
+    .team-member.img6 {
+        display: none;
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .team-section h1{
+        font-size: 1.8rem;
+    }
+
+    .team-member {
+        max-width: none;
+    }
+
     .footer .row{
         padding-left: 20px;
         padding-right: 20px;
