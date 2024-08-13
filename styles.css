@@ -142,6 +142,9 @@ p{
     border-radius: 12px;
     background-color: rgba(48, 48, 48, 0.54);;
 }
+.box1 h4{
+    font-size: 2rem;
+}
 .circle{
     position: absolute;
     width: 40px;
@@ -164,14 +167,17 @@ p{
     position: absolute;
     width: 193px;
     height: 98px;
-    
-        left: 70.5%;
-        top: 46.7%;
+    left: 70.5%;
+    top: 46.7%;
+    padding-left: 20px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
+}
+.box2 h4{
+    font-size: 3rem;
 }
 
 .change-habit{
@@ -363,7 +369,8 @@ p{
     padding-bottom: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 190px;
+    padding: 20px 190px;
+    max-width: 100%;
 }
 
 .team-section h1 {
@@ -377,15 +384,15 @@ p{
     font-size: 1rem;
     margin-bottom: 40px;
 
+
 }
 
 .team-grid {
-    max-width: 1060px;
+    max-width: 1200px;
     min-height: 604px;
     background-color: rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:20px;
     align-items: center;
     justify-items: center;
     border-radius: 1rem;
@@ -498,6 +505,7 @@ p{
 
 /* Mobile view adjustments */
 @media (max-width: 576px) {
+
     .nav-options{
         display: none;
     }
@@ -532,7 +540,6 @@ p{
 
     .run-extra{
         flex-direction: column;
-        width: 100%;
         height: auto;
         padding: 20px;
     }
