@@ -2,9 +2,12 @@
 
 
 *{
-    padding: 20px auto;
+    padding: 0;
     margin: 0;
+    width: 100%;
 }
+
+
 
 button{
     background-color: #d64424;
@@ -17,7 +20,63 @@ button{
 
 }
 
+.run-extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    border-radius: 15px;
+    padding: 190px;
+    /* padding: 20px; */
+    max-width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.text-content button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 366px;
+    max-height: 312px;
+    display: flex;
+    justify-content: center;
+    object-fit: none;
+    object-position: 65% 28%;
+}
+
+
+.image-content img {
+    border-radius: 15px;
+    height: 100%;
+    max-width: 100%;
+}
+
 .bmi-section {
+    width: 100%;
     background-color: #000000;
     text-align: center;
     padding-top: 20px;
@@ -27,7 +86,6 @@ button{
 .bmi-section h1 {
     color: #ffffff;
     font-size: 2.5rem;
-    font-weight: ;
     margin-bottom: 10px;
 }
 
@@ -39,9 +97,7 @@ button{
 
 .bmi-container {
     background-color: #333;
-    padding-top: 20px;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding: 20px 190px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -124,8 +180,7 @@ button{
 
 .team-section {
     text-align: center;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding: 20px 190px;
     background-color: #000000;
     padding-bottom: 80px;
 }
@@ -208,6 +263,7 @@ button{
 }
 
 .footer {
+    margin: 0 auto;
     background-color: #202020;
     color: white;
     justify-content: space-evenly;
@@ -260,6 +316,29 @@ button{
 
 /* Mobile view adjustments */
 @media (max-width: 576px) {
+    .run-extra{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .text-content {
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
     .bmi-section{
         padding: 20px auto;
     }
