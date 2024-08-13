@@ -4,10 +4,12 @@
 *{
     padding: 0;
     margin: 0;
-    width: 100%;
 }
 
-
+.container{
+    max-width: 100%;
+    border-radius: 1rem;
+}
 
 button{
     background-color: #d64424;
@@ -15,21 +17,197 @@ button{
     font-size: 15px;
     border: none;
     position: static;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 60px;
+    text-align: center;
     width: 224px;
     height: 54px;
 
 }
 
-.run-extra{
+h2{
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    line-height: normal;
+    font-style: italic;
+}
+a,
+li{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+}
+.text-light{
+    color: #ffffff;
+}
+.text-gray{
+    color: rgba(255,255,255,0.5);
+}
+/* Banner Part */
+.banner{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    
+}
+/* Nav Bar Part */
+.nav-bar{
+    width: 1060px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-right: 190px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 280px;
+}
+.fitness{
+
+    color: #d64424;
+    font-size:40px;
+    font-weight: 800;
+}
+.button{
+    display: flex;
+}
+.nav-options{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+.nav-options a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-options a span{
+    background-color: rgb(230, 83, 60);
+    border-radius: 46px;
+    padding: 8px 20px;
+}
+.ham-burger{
+    display: none;
+}
+
+.banner-items{
+    display: flex;
+}
+.banner-content{
+    margin-left: 190px;
+    max-width: 600px;
+    padding-right: 60px;
+}
+.btn-primary{
+    border-radius: 42px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(230, 83, 60);
+    padding: 16px 40px;
+    margin: 0px 14px;
+    border: none;
+    
+}
+
+.btn-secondary{
+    border-radius: 42px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px;
+    margin: 0px 14px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.box1{
+    position: absolute;
+    /* margin-left: -100px;
+    margin-bottom: 500px; */
+    left: 764px;
+    top: 556px;
+    width: 206px;
+    height: 96px;
+    display: flex;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.54);;
+}
+.circle{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+    
+    align-items: center;
+    background: rgb(230, 83, 60);
+    border-radius: 100%;
+}
+#tutorial{
+    margin-left: 65px;
+    margin-top: 20px;
+    height: 56px;
+}
+
+.box2{
+    position: absolute;
+    width: 193px;
+    height: 98px;
+    
+        left: 70.5%;
+        top: 46.7%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.change-habit{
+    padding-top: 60px;
+    padding-left: 190px;
+    padding-right: 190px;
+    background-color: black;
+}
+.change-habit-content{
+    text-align: center;
+}
+
+.modules{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+.module > img{
+    border-radius: 50%;
+}
+.run-extra{
+    background-color: #000000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px auto;
+}
+.run-extra-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
     background-color: #333;
     color: white;
     border-radius: 15px;
-    padding: 190px;
+    padding: 20px 20px;
     /* padding: 20px; */
-    max-width: 80%;
     height: 100%;
     box-sizing: border-box;
 }
@@ -145,8 +323,9 @@ button{
 }
 
 .bmi-calculator .input-group {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     margin-bottom: 20px;
 }
 .bmi-calculator p{
@@ -180,9 +359,11 @@ button{
 
 .team-section {
     text-align: center;
-    padding: 20px 190px;
     background-color: #000000;
     padding-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 190px;
 }
 
 .team-section h1 {
@@ -204,11 +385,11 @@ button{
     background-color: rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
     gap:20px;
     align-items: center;
     justify-items: center;
     border-radius: 1rem;
+    
 
 }
 
@@ -220,6 +401,7 @@ button{
     height: 272px;
     text-align: left;
     background-size: cover;
+    
 }
 
 .team-member img {
@@ -316,6 +498,38 @@ button{
 
 /* Mobile view adjustments */
 @media (max-width: 576px) {
+    .nav-options{
+        display: none;
+    }
+    .ham-burger{
+        display: block;
+    }
+    .banner-items{
+        flex-direction: column;
+
+    }
+    .box1{
+        position: absolute;
+        width: 155.74px;
+        height: 72.58px;
+        left: 8.1%;
+        top: 103.3%;
+
+    }
+    .box2{
+        width: 37.1%;
+        height: 18.9%;
+        left: 54.5%;
+        top: 46.7%;
+
+    }
+
+    .modules{
+        flex-direction: column;
+    }
+
+
+
     .run-extra{
         flex-direction: column;
         width: 100%;
