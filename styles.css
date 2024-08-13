@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 *{
     padding: 0;
     margin: 0;
@@ -109,6 +109,13 @@ p{
     max-width: 600px;
     padding-right: 60px;
 }
+.banner-content h1 span{
+    font-family: 'Miama', sans-serif; 
+    font-size: 2rem;                                            
+}
+.button{
+    padding-top: 20px;
+}
 .btn-primary{
     border-radius: 42px;
     color: #ffffff;
@@ -203,6 +210,7 @@ p{
     align-items: center;
     justify-content: space-between;
     padding: 20px auto;
+    margin: 0 auto;
 }
 .run-extra-content{
     width: 80%;
@@ -485,6 +493,7 @@ p{
     padding: 0;
 }
 .footer ul li {
+    text-align: left;
     margin: 10px 0;
 }
 .footer ul li a {
@@ -505,6 +514,10 @@ p{
 
 /* Mobile view adjustments */
 @media (max-width: 576px) {
+    .nav-bar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .nav-options{
         display: none;
@@ -512,7 +525,9 @@ p{
     .ham-burger{
         display: block;
     }
+
     .banner-items{
+        padding: 0px;
         flex-direction: column;
 
     }
