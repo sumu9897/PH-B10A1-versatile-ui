@@ -12,7 +12,7 @@
 }
 
 button{
-    background-color: #d64424;
+    background-color:rgb(230, 83, 60);
     border-radius: 42px;
     font-size: 15px;
     border: none;
@@ -187,7 +187,7 @@ p{
     width: 193px;
     height: 98px;
     left: 70.5%;
-    top: 46.7%;
+    top: 20%;
     padding-left: 20px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -201,8 +201,7 @@ p{
 
 .change-habit{
     padding-top: 60px;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding-left: 20px;
     background-color: black;
 }
 .change-habit-content{
@@ -434,7 +433,7 @@ p{
 }
 
 .team-member img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -471,6 +470,90 @@ p{
 .member-info p {
     font-size: 0.9rem;
     color: #ddcaca;
+}
+
+.pricing-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.pricing-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-type {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 36px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.per {
+    display: block;
+    font-size: 14px;
+    color: #999;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.select-button {
+    border: 2px solid #e74c3c;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px;
+}
+
+.select-button:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.pricing-card img {
+    width: 100%;
+    height: auto;
 }
 
 .footer {
@@ -529,12 +612,17 @@ p{
 
 /* Mobile view adjustments */
 @media (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
     .nav-bar{
+        max-width: 90%;
         padding-left: 20px;
         padding-right: 20px;
     }
 
     .nav-options{
+        
         display: none;
     }
     .ham-burger{
@@ -551,16 +639,17 @@ p{
         padding-left: 20px;
     }
     .box1{
-        position: absolute;
+        position: block;
         width: 155.74px;
         height: 72.58px;
         left: 8.1%;
-        top: 253.3%;
+        top: 203.3%;
 
     }
     .box2{
-        left: 154.5%;
-        top: 46.7%;
+        position: block;
+        left: 54.5%;
+        top: 116.7%;
 
     }
 
@@ -616,6 +705,8 @@ p{
         display: none;
     }
     .team-grid {
+        padding: 20px;
+        row-gap: 20px;
         grid-template-columns: 1fr;
     }
     .team-section h1{
