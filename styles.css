@@ -8,7 +8,6 @@
 
 .container{
     max-width: 100%;
-    border-radius: 1rem;
 }
 
 button{
@@ -60,13 +59,10 @@ p{
     margin: 0 auto;
     padding-top: 60px;
     padding-right: 190px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    
-
 }
 .logo{
     display: flex;
@@ -209,8 +205,9 @@ p{
 }
 
 .change-habit{
+    
     padding-top: 60px;
-    padding-left: 20px;
+    padding-left: 120px;
     background-color: black;
 }
 .change-habit-content{
