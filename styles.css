@@ -127,8 +127,8 @@ p{
 .btn-primary{
     border-radius: 42px;
     color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
     background-color: rgb(230, 83, 60);
     padding: 16px 40px;
     margin: 0px 14px;
@@ -141,13 +141,22 @@ p{
 .btn-secondary{
     border-radius: 42px;
     color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
     padding: 16px 40px;
     margin: 0px 14px;
+    background-color: black;
     border: 1px solid rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}
+.btn-secondary:hover{
+    background-color: white;
+    color: #000;
 }
 .box1{
     position: absolute;
@@ -638,6 +647,7 @@ p{
         margin: 0;
         padding-left: 20px;
     }
+    
     .box1{
         position: block;
         width: 155.74px;
