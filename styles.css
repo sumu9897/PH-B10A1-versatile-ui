@@ -102,6 +102,7 @@ p{
 }
 
 .banner-items{
+    max-width: 1440px;
     display: flex;
 }
 .banner-content{
@@ -109,12 +110,19 @@ p{
     max-width: 600px;
     padding-right: 60px;
 }
+.banner-content h1{
+    font-size: 4.88rem;
+}
 .banner-content h1 span{
-    font-family: 'Miama', sans-serif; 
-    font-size: 2rem;                                            
+    font-family: 'Miama', sans-serif;                                           
+}
+.banner-content p{
+    font-size: 1rem;
 }
 .button{
     padding-top: 20px;
+    color: white;
+    font-weight: 600;
 }
 .btn-primary{
     border-radius: 42px;
@@ -125,6 +133,8 @@ p{
     padding: 16px 40px;
     margin: 0px 14px;
     border: none;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -136,6 +146,8 @@ p{
     padding: 16px 40px;
     margin: 0px 14px;
     border: 1px solid rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
 }
 .box1{
     position: absolute;
@@ -209,14 +221,16 @@ p{
     background-color: #000000;
     align-items: center;
     justify-content: space-between;
-    padding: 20px auto;
-    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+
 }
 .run-extra-content{
     width: 80%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    
     background-color: #333;
     color: white;
     border-radius: 15px;
@@ -481,6 +495,7 @@ p{
     font-size: 70px;
     font-weight: 800px;
     font-style: italic;
+    text-align: left;
     color: #e03d1e;
 
 }
@@ -531,18 +546,20 @@ p{
         flex-direction: column;
 
     }
+    .banner-content{
+        margin: 0;
+        padding-left: 20px;
+    }
     .box1{
         position: absolute;
         width: 155.74px;
         height: 72.58px;
         left: 8.1%;
-        top: 103.3%;
+        top: 253.3%;
 
     }
     .box2{
-        width: 37.1%;
-        height: 18.9%;
-        left: 54.5%;
+        left: 154.5%;
         top: 46.7%;
 
     }
@@ -553,7 +570,7 @@ p{
 
 
 
-    .run-extra{
+    .run-extra-content{
         flex-direction: column;
         height: auto;
         padding: 20px;
@@ -579,8 +596,13 @@ p{
         padding: 20px auto;
     }
     .bmi-container{
-        
+        padding: 20px;
+        align-items: center;
         flex-direction: column;
+    }
+    .bmi-chart{
+        max-width: 310px;
+        height: 216px;
     }
     .bmi-calculator{
         
