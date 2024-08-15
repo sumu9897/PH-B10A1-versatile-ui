@@ -169,7 +169,7 @@ p{
     /* margin-left: -100px;
     margin-bottom: 500px; */
     left: 50%;
-    top: 90%;
+    top: 75%;
     width: 206px;
     height: 96px;
     display: flex;
@@ -426,6 +426,7 @@ p{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding-top: 60px;
 }
 .team{
     max-width: 1044;
@@ -678,8 +679,11 @@ p{
     .banner-content{
         margin: 0;
         padding-left: 20px;
+        padding-right: 20px;
     }
-    
+    .banner-img{
+        padding-right: 0px;
+    }
     .box1{
         position: block;
         width: 155.74px;
@@ -735,13 +739,17 @@ p{
         max-width: 310px;
         height: 216px;
     }
-    .bmi-calculator{
+    
+    .team-section{
+        padding: auto;        
+        padding-left: 25px;
+        padding-right: 25px;
         
     }
-    .team-section{
-        padding-left: 20px;
-        padding-right: 20px;
+    .team-grid{
+        margin: 0 auto;
     }
+
     .team-member.img5,
     .team-member.img6 {
         display: none;
