@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @import url('https://fonts.cdnfonts.com/css/miama');
+
 *{
     padding: 0;
     margin: 0;
 }
-
+body{
+    font-family: "Inter", sans-serif;
+}
 .container{
     max-width: 100%;
 }
@@ -55,10 +58,9 @@ p{
 }
 /* Nav Bar Part */
 .nav-bar{
-    width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
-    padding-top: 60px;
-    padding-right: 190px;
+    padding: 60px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,21 +101,25 @@ p{
 
 .banner-items{
     max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
     display: flex;
 }
 .banner-content{
     margin-left: 190px;
     max-width: 600px;
-    padding-right: 60px;
+    padding-right: 90px;
 }
 .banner-content h1{
     font-size: 4.88rem;
+    color: white;
 }
 .banner-content h1 span{
     font-family: 'Miama', sans-serif;                                           
 }
 .banner-content p{
     font-size: 1rem;
+    color: whitesmoke;
 }
 .button{
     padding-top: 20px;
@@ -154,12 +160,16 @@ p{
     background-color: white;
     color: #000;
 }
-.box1{
+.banner-img{
+    width: 100%;
+    padding-right: 200px;
+}
+.banner-img .box1{
     position: absolute;
     /* margin-left: -100px;
     margin-bottom: 500px; */
-    left: 764px;
-    top: 556px;
+    left: 50%;
+    top: 90%;
     width: 206px;
     height: 96px;
     display: flex;
@@ -205,15 +215,20 @@ p{
 }
 
 .change-habit{
-    
     padding-top: 60px;
-    padding-left: 120px;
     background-color: black;
 }
 .change-habit-content{
     text-align: center;
+    margin: 0 auto;
+    max-width: 1044px;
 }
 
+.change-habit-content p{
+    color: #b5b5b5;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
 .modules{
     display: flex;
     align-items: center;
@@ -226,13 +241,13 @@ p{
     background-color: #000000;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20%;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 .run-extra-content{
-    width: 80%;
+    max-width: 1044px;
+    margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -287,29 +302,43 @@ p{
 }
 
 .bmi-section {
-    width: 100%;
     background-color: #000000;
+    margin: 0 auto;
     text-align: center;
     padding-top: 20px;
     
 }
+.bmi-content{
+    margin: 0 auto;
+    max-width: 1044px;
 
-.bmi-section h1 {
+}
+.bmi-calculator-content{
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.bmi-calculator-content {
     color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.bmi-section .subtext {
+.bmi-calculator-content .subtext {
     font-size: 1rem;
     margin-bottom: 40px;
     color: #bbb;
 }
+.chart-calculator{
+    background-color: #333;
+}
 
 .bmi-container {
-    background-color: #333;
-    padding: 20px 190px;
+    
     display: flex;
+    max-width: 1044px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
@@ -396,11 +425,13 @@ p{
     padding-bottom: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 190px;
-    max-width: 100%;
+    margin: 0 auto;
+}
+.team{
+    max-width: 1044;
 }
 
-.team-section h1 {
+.team h1 {
     color: rgb(255, 255, 255);
     font-size: 2.7rem;
     margin-bottom: 10px;
@@ -415,11 +446,13 @@ p{
 }
 
 .team-grid {
-    max-width: 1200px;
-    min-height: 604px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1044px;
     background-color: rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
     align-items: center;
     justify-items: center;
     border-radius: 1rem;
@@ -563,16 +596,22 @@ p{
 }
 
 .footer {
-    margin: 0 auto;
+    
     background-color: #202020;
+    align-items: center;
     color: white;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
+}
+.footer-content{
+    max-width: 1044px;
+    margin: 0 auto;
+    align-items: center;
 }
 .row{
     padding-top: 66px;
-    padding-left: 190px;
-    padding-right: 190px;
+    
     display: flex;
 
 }
@@ -621,11 +660,7 @@ p{
     .container{
         max-width: 100%;
     }
-    .nav-bar{
-        max-width: 90%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+    
 
     .nav-options{
         
