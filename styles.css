@@ -23,7 +23,7 @@ button{
     padding-top: 20px;
     padding-left: 60px;
     text-align: center;
-    width: 224px;
+    max-width: 224px;
     height: 54px;
 
 }
@@ -108,7 +108,7 @@ p{
 .banner-content{
     margin-left: 190px;
     max-width: 600px;
-    padding-right: 90px;
+    
 }
 .banner-content h1{
     font-size: 4.88rem;
@@ -161,21 +161,23 @@ p{
     color: #000;
 }
 .banner-img{
-    width: 100%;
-    padding-right: 200px;
+    position: relative;
+    max-width: 100%;
+    padding-left: 90px;
 }
 .banner-img .box1{
     position: absolute;
     /* margin-left: -100px;
     margin-bottom: 500px; */
-    left: 50%;
-    top: 75%;
+    left: 5%;
+    top: 80%;
     width: 206px;
     height: 96px;
     display: flex;
     border-radius: 12px;
     background-color: rgba(48, 48, 48, 0.54);;
 }
+
 .box1 h4{
     font-size: 2rem;
 }
@@ -185,8 +187,6 @@ p{
     height: 40px;
     margin-left: 20px;
     margin-top: 30px;
-
-    
     align-items: center;
     background: rgb(230, 83, 60);
     border-radius: 100%;
@@ -377,6 +377,7 @@ p{
 }
 
 .bmi-calculator form {
+    padding-top: 20px;
     text-align: left;
 }
 .input{
@@ -683,20 +684,22 @@ p{
         padding-right: 20px;
     }
     .banner-img{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
         padding-right: 0px;
     }
-    .box1{
+    /* .box1{
         position: block;
         width: 155.74px;
         height: 72.58px;
         left: 8.1%;
         top: 203.3%;
-
-    }
+    } */
     .box2{
         position: block;
         left: 54.5%;
-        top: 116.7%;
+        top: 16.7%;
 
     }
 
@@ -731,16 +734,32 @@ p{
     .bmi-section{
         padding: 20px auto;
     }
+    .bmi-content{
+        padding: 20px;
+    }
     .bmi-container{
         padding: 20px;
         align-items: center;
         flex-direction: column;
     }
-    .bmi-chart{
-        max-width: 310px;
-        height: 216px;
+    .chart-calculator{
+        padding: 0px;
     }
-    
+    .bmi-container{
+        padding: 20px;
+    }
+    .bmi-chart{
+        padding: 20px;
+        max-width: 100%;
+    }
+    .bmi-calculator{
+        padding: 20px;
+        max-width: 100%;
+    }
+    .button{
+        width: 100%;
+
+    }
     .team-section{
         padding: auto;        
         padding-left: 25px;
