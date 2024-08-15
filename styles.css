@@ -672,6 +672,7 @@ p{
     }
 
     .banner-items{
+        max-width: 100%;
         padding: 0px;
         flex-direction: column;
 
@@ -766,16 +767,20 @@ p{
     .team-member {
         max-width: none;
     }
-
+    .footer{
+        padding: 20px;
+    }
     .footer .row{
-        padding-left: 20px;
-        padding-right: 20px;
         flex-direction: column;
         text-align: left;
     }
     .footer .column {
         flex: none;
         width: 100%;
+        text-align: left;
+    }
+    .footer .rights{
+        margin: 0;
         text-align: left;
     }
 }
